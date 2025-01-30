@@ -8,7 +8,7 @@ def download_file(url, filename):
         urllib.request.urlretrieve(url, filename)
         print(f"Downloaded {filename} successfully.")
     except Exception as e:
-        print(f"Failed to download {filename}: {e}")
+        print(f"Failed to download file.")
         exit(1)
 
 def compile_c_code(c_filename):
