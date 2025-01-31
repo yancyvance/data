@@ -34,7 +34,7 @@ def run_executable(executable_name):
 
 def main():
     # check which lab exercise this is
-    exercise_number = input("Which programming assignment is this (Enter a number): ")
+    exercise_number = input("Which programming assignment is this for (Enter a number): ")
     complete_file_name = 'pa{}_data.txt'.format(int(exercise_number))
     
     # check if the file already exists
