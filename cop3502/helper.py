@@ -15,6 +15,7 @@ def compile_c_code(c_filename):
     """Compiles a C program using gcc."""
     executable_name = c_filename.replace(".c", "")
     compile_command = ["gcc", c_filename, "-o", executable_name]
+    print(f"Compiling {c_filename}")
     
     try:
         subprocess.run(compile_command, check=True)
